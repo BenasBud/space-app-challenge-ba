@@ -1,0 +1,88 @@
+.start {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+
+  h1 {
+    color: #fff;
+    font-family: "Monoton", cursive;
+    font-size: 6vw;
+    transform: scale(0);
+    animation: 0.5s startText forwards;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 1vw;
+    animation: 2s blinkText infinite;
+    font-family: "Codystar", cursive;
+  }
+
+  &--username {
+    margin-top: 30px;
+
+    input {
+      font-family: "VT323", monospace;
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      font-size: 22px;
+      outline: none;
+      width: 300px;
+      text-align: center;
+
+      &.error {
+        color: red;
+
+        &::placeholder {
+          color: red;
+        }
+      }
+    }
+  }
+
+  &--select-room {
+    margin-top: 130px;
+
+    select {
+      border-radius: 0;
+      text-align: center;
+      font-family: "VT323", monospace;
+      border: none;
+      color: #000;
+      outline: none;
+
+      &.error {
+        color: red;
+      }
+    }
+  }
+}
+
+@keyframes startText {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes blinkText {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
