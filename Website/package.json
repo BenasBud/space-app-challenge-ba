@@ -11,7 +11,7 @@
     "classnames": "^2.2.6",
     "formik": "^1.5.8",
     "grapheme-splitter": "^1.0.4",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
     "p5": "^0.10.2",
     "react": "^16.10.2",
